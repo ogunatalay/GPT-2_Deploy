@@ -1,0 +1,40 @@
+{
+    "test_summary": {
+        "total_requests": 4150,
+        "total_failures": 0,
+        "error_rate": "0.00%",
+        "test_duration": "Test s\u00fcresi bilgisi"
+    },
+    "endpoint_performance": [
+        {
+            "endpoint": "/generate_async",
+            "request_count": 1006,
+            "throughput": "0.76 req/s",
+            "avg_response_time": "103105.02 ms",
+            "median_response_time": "105000.00 ms",
+            "failure_count": 0
+        },
+        {
+            "endpoint": "/generate_sync",
+            "request_count": 1069,
+            "throughput": "0.81 req/s",
+            "avg_response_time": "21223.02 ms",
+            "median_response_time": "20000.00 ms",
+            "failure_count": 0
+        },
+        {
+            "endpoint": "Aggregated",
+            "request_count": 2075,
+            "throughput": "1.57 req/s",
+            "avg_response_time": "60920.99 ms",
+            "median_response_time": "32000.00 ms",
+            "failure_count": 0
+        }
+    ],
+    "recommendations": [
+        "Async endpoint senkron versiyondan %0.0 daha hizli",
+        "Yuksek trafikli senaryolarda async kullanimi onerilir",
+        "Connection timeout hatalari icin timeout surelerini ayarlayin",
+        "500 hatalari icin model yukleme surecini optimize edin"
+    ]
+}
